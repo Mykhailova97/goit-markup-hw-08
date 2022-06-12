@@ -1,0 +1,82 @@
+.footer {
+  background-color: $secondary-bg-color;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer__content {
+  display: inline-flex;
+  align-items: baseline;
+}
+
+.footer__contacts {
+  text-align: left;
+  width: 231px;
+  margin-top: 20px;
+}
+
+.footer__contacts > *:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.footer__link {
+  color: rgba(255, 255, 255, 0.6);
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.footer__link--white {
+  color: $primary-bg-color;
+}
+
+.footer__join {
+  margin-left: 70px;
+  width: 206px;
+}
+
+.footer__title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $primary-bg-color;
+  margin-bottom: 20px;
+}
+
+.footer__subscribe {
+  margin-left: 93px;
+  width: 570px;
+}
+
+.footer__form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__input {
+  padding: 15px 16px;
+  width: 358px;
+  background-color: #2196f300;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer__btn {
+  @extend .btn;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer__icon {
+  fill: $primary-bg-color;
+  margin-left: 10px;
+}

@@ -1,0 +1,35 @@
+.company__title {
+  margin-bottom: 50px;
+}
+
+.company__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.company__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  height: 92px;
+  width: 170px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    border-color: $button-bg-color;
+    fill: $button-bg-color;
+  }
+}
+
+.company__icon {
+  fill: #afb1b8;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  .company__link:hover &,
+  .company__link:focus & {
+    fill: $button-bg-color;
+  }
+}
