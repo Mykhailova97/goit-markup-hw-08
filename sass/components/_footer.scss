@@ -5,18 +5,33 @@
 }
 
 .footer__content {
-  display: inline-flex;
-  align-items: baseline;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  text-align: center;
+}
+
+.footer__info {
+  margin-bottom: 60px;
+}
+
+.footer__input {
+  margin-bottom: 20px;
+}
+
+.footer__btn {
+  margin: 0 auto;
+}
+
+.footer__logo {
+  display: block;
+  margin-bottom: 20px;
 }
 
 .footer__contacts {
-  text-align: left;
-  width: 231px;
-  margin-top: 20px;
-}
-
-.footer__contacts > *:not(:last-child) {
-  margin-bottom: 9px;
+  & > *:not(:last-child) {
+    margin-bottom: 8px;
+  }
 }
 
 .footer__link {
@@ -32,8 +47,7 @@
 }
 
 .footer__join {
-  margin-left: 70px;
-  width: 206px;
+  margin-bottom: 60px;
 }
 
 .footer__title {
@@ -46,20 +60,9 @@
   margin-bottom: 20px;
 }
 
-.footer__subscribe {
-  margin-left: 93px;
-  width: 570px;
-}
-
-.footer__form {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 .footer__input {
   padding: 15px 16px;
-  width: 358px;
+  width: 100%;
   background-color: #2196f300;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
@@ -79,4 +82,70 @@
 .footer__icon {
   fill: $primary-bg-color;
   margin-left: 10px;
+}
+
+@media screen and (min-width: $tablet) {
+  .footer__content {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: baseline;
+    text-align: center;
+  }
+
+  .footer__info {
+    margin-bottom: 60px;
+    flex-basis: calc(100% / 2);
+  }
+
+  .footer__join {
+    flex-basis: calc(100% / 2);
+  }
+
+  .footer__subscribe {
+    flex-basis: 100%;
+  }
+
+  .footer__input {
+    width: 450px;
+    margin-bottom: 20px;
+  }
+
+  .footer__btn {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .footer__content {
+    text-align: left;
+    flex-wrap: nowrap;
+  }
+
+  .footer__info {
+    margin-bottom: 0;
+    flex-basis: 231px;
+  }
+
+  .footer__join {
+    margin-left: 70px;
+    flex-basis: 206px;
+    margin-bottom: 0;
+  }
+
+  .footer__subscribe {
+    margin-left: 93px;
+    flex-basis: 570px;
+  }
+
+  .footer__form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer__input {
+    width: 358px;
+    margin-bottom: 0;
+  }
 }

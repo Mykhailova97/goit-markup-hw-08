@@ -1,0 +1,112 @@
+.mobile-menu {
+  position: fixed;
+  z-index: 50;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 48px 40px;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobile-menu--hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.mobile-menu__close-btn {
+  width: 40px;
+  height: 40px;
+  border-style: none;
+  background-color: $primary-bg-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  cursor: pointer;
+}
+
+.mobile-menu__close-icon {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  .mobile-menu__close-btn:hover &,
+  .mobile-menu__close-btn:focus & {
+    fill: $button-bg-color;
+  }
+}
+
+.mobile-menu__nav {
+  & > *:not(:last-child) {
+    margin-bottom: 32px;
+  }
+}
+
+.mobile-menu__nav-link {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: $primary-text-color;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: $button-bg-color;
+  }
+}
+
+.mobile-menu__contacts {
+  margin-top: auto;
+  margin-bottom: 64px;
+  & > *:not(:last-child) {
+    margin-bottom: 32px;
+  }
+}
+
+.mobile-menu__contacts-link {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: $secondary-text-color;
+}
+
+.mobile-menu__contacts-link--blue {
+  font-size: 34px;
+  line-height: 1.18;
+  color: $button-bg-color;
+}
+
+.mobile-menu__socials {
+  display: flex;
+  & > *:not(:last-child) {
+    margin-right: 20px;
+  }
+}
+
+.mobile-menu__socials-item {
+  position: relative;
+}
+
+.mobile-menu__socials-item:not(:first-child)::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -10px;
+  background-color: #21212133;
+  width: 1px;
+  height: 100%;
+}
+
+.mobile-menu__socials-link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: $button-bg-color;
+}

@@ -2,3 +2,7 @@
   color: $primary-text-color;
   font-family: "Roboto";
 }
+
+.body--no-vertical-scroll {
+  overflow-y: hidden;
+}

@@ -9,6 +9,6 @@
   refs.closeModalBtn.addEventListener("click", toggleModal);
 
   function toggleModal() {
-    refs.modal.classList.toggle("order-modal--hidden");
+    refs.modal.classList.toggle("data-modal--hidden");
   }
 })();

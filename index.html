@@ -17,7 +17,7 @@
       rel="stylesheet"
     />
   </head>
-  <body class="body">
+  <body class="body" data-body>
     <header class="header">
       <div class="container">
         <div class="header__content">
@@ -44,7 +44,7 @@
           <ul class="header__auth-nav-list">
             <li class="header__auth-nav-item">
               <a class="header__auth-nav-link" href="mailto:info@devstudio.com">
-                <svg class="header__auth-nav-icon" width="20" height="16">
+                <svg class="header__auth-nav-icon" width="14" height="10">
                   <use href="./images/icons.svg#icon-mail"></use>
                 </svg>
                 info@devstudio.com</a
@@ -52,13 +52,18 @@
             </li>
             <li class="header__auth-nav-item">
               <a class="header__auth-nav-link" href="tel:+380961111111">
-                <svg class="header__auth-nav-icon" width="14" height="20">
+                <svg class="header__auth-nav-icon" width="10" height="14">
                   <use href="./images/icons.svg#icon-phone"></use>
                 </svg>
                 +38 096 111 11 11</a
               >
             </li>
           </ul>
+          <button class="menu-btn" data-menu-open>
+            <svg class="menu-btn__icon" width="40" height="40">
+              <use href="./images/icons.svg#icon-menu"></use>
+            </svg>
+          </button>
         </div>
       </div>
     </header>
@@ -130,8 +135,8 @@
             <li class="about__item">
               <img
                 class="about__img"
-                src="images/index/box1.jpg"
-                width="370"
+                srcset="images/index/about-1_lg.jpg 1x, about-1_lg@2x.jpg 2x"
+                src="images/index/about-1_lg.jpg"
                 alt="Друкування тексту на планшеті"
               />
               <p class="about__text">Десктопные приложения</p>
@@ -139,8 +144,8 @@
             <li class="about__item">
               <img
                 class="about__img"
-                src="images/index/box2.jpg"
-                width="370"
+                srcset="images/index/about-2_lg.jpg 1x, about-2_lg@2x.jpg 2x"
+                src="images/index/about-2_lg.jpg"
                 alt="Отримання нотифікації на телефон"
               />
               <p class="about__text">Мобильные приложения</p>
@@ -148,8 +153,8 @@
             <li class="about__item">
               <img
                 class="about__img"
-                src="images/index/box3.jpg"
-                width="370"
+                srcset="images/index/about-3_lg.jpg 1x, about-3_lg@2x.jpg 2x"
+                src="images/index/about-3_lg.jpg"
                 alt="Графічний дизайн"
               />
               <p class="about__text">Дизайнерские решения</p>
@@ -164,8 +169,16 @@
             <li class="team__item">
               <img
                 class="team__photo"
-                src="images/index/team_card1.jpg"
-                width="270"
+                srcset="
+                  images/index/team-1_270.jpg 270w,
+                  images/index/team-1_354.jpg 354w,
+                  images/index/team-1_450.jpg 450w,
+                  images/index/team-1_540.jpg 540w,
+                  images/index/team-1_708.jpg 708w,
+                  images/index/team-1_900.jpg 900w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (max-width: 767px) 450px, 100vw"
+                src="images/index/team-1_450.jpg"
                 alt="Игорь Демьяненко"
               />
               <div class="team__info">
@@ -226,8 +239,16 @@
             <li class="team__item">
               <img
                 class="team__photo"
-                src="images/index/team_card2.jpg"
-                width="270"
+                srcset="
+                  images/index/team-2_270.jpg 270w,
+                  images/index/team-2_354.jpg 354w,
+                  images/index/team-2_450.jpg 450w,
+                  images/index/team-2_540.jpg 540w,
+                  images/index/team-2_708.jpg 708w,
+                  images/index/team-2_900.jpg 900w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (max-width: 767px) 450px, 100vw"
+                src="images/index/team-2_450.jpg"
                 alt="Ольга Репина"
               />
               <div class="team__info">
@@ -288,8 +309,16 @@
             <li class="team__item">
               <img
                 class="team__photo"
-                src="images/index/team_card3.jpg"
-                width="270"
+                srcset="
+                  images/index/team-3_270.jpg 270w,
+                  images/index/team-3_354.jpg 354w,
+                  images/index/team-3_450.jpg 450w,
+                  images/index/team-3_540.jpg 540w,
+                  images/index/team-3_708.jpg 708w,
+                  images/index/team-3_900.jpg 900w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (max-width: 767px) 450px, 100vw"
+                src="images/index/team-3_450.jpg"
                 alt="Николай Тарасов"
               />
               <div class="team__info">
@@ -350,8 +379,16 @@
             <li class="team__item">
               <img
                 class="team__photo"
-                src="images/index/team_card4.jpg"
-                width="270"
+                srcset="
+                  images/index/team-4_270.jpg 270w,
+                  images/index/team-4_354.jpg 354w,
+                  images/index/team-4_450.jpg 450w,
+                  images/index/team-4_540.jpg 540w,
+                  images/index/team-4_708.jpg 708w,
+                  images/index/team-4_900.jpg 900w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (max-width: 767px) 450px, 100vw"
+                src="images/index/team-4_450.jpg"
                 alt="Михаил Ермаков"
               />
               <div class="team__info">
@@ -466,7 +503,7 @@
       <div class="container">
         <div class="footer__content">
           <div class="footer__info">
-            <a href="index.html" class="logo"
+            <a href="index.html" class="footer__logo logo"
               >Web<span class="logo__label logo__label--white">Studio</span></a
             >
             <address class="footer__address">
@@ -655,6 +692,54 @@
         </form>
       </div>
     </div>
+    <!-- Mobile Menu-->
+    <div class="mobile-menu mobile-menu--hidden" data-menu>
+      <button class="mobile-menu__close-btn" data-menu-close>
+        <svg class="mobile-menu__close-icon" width="18" height="18">
+          <use href="./images/icons.svg#icon-close-button"></use>
+        </svg>
+      </button>
+      <ul class="mobile-menu__nav">
+        <li class="mobile-menu__nav-item">
+          <a href="index.html" class="mobile-menu__nav-link">Студия</a>
+        </li>
+        <li class="mobile-menu__nav-item">
+          <a href="portfolio.html" class="mobile-menu__nav-link">Портфолио</a>
+        </li>
+        <li class="mobile-menu__nav-item">
+          <a href="#" class="mobile-menu__nav-link">Контакты</a>
+        </li>
+      </ul>
+      <ul class="mobile-menu__contacts">
+        <li class="mobile-menu__contacts-item">
+          <a
+            href="tel:+380961111111"
+            class="mobile-menu__contacts-link mobile-menu__contacts-link--blue"
+            >+38 096 111 11 11</a
+          >
+        </li>
+        <li class="mobile-menu__contacts-item">
+          <a href="email:info@devstudio.com" class="mobile-menu__contacts-link"
+            >info@devstudio.com</a
+          >
+        </li>
+      </ul>
+      <ul class="mobile-menu__socials">
+        <li class="mobile-menu__socials-item">
+          <a href="#" class="mobile-menu__socials-link">Instagram</a>
+        </li>
+        <li class="mobile-menu__socials-item">
+          <a href="#" class="mobile-menu__socials-link">Twitter</a>
+        </li>
+        <li class="mobile-menu__socials-item">
+          <a href="#" class="mobile-menu__socials-link">Facebook</a>
+        </li>
+        <li class="mobile-menu__socials-item">
+          <a href="#" class="mobile-menu__socials-link">LinkedIn</a>
+        </li>
+      </ul>
+    </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
